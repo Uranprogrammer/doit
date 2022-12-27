@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/DoIt</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <form action="" class="color-picker">
+        <fieldset>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+            
+            <label for="light" class="visually-hidden">Light</label>
+            <input type="radio" name="theme" id="light" checked>
+
+            <label for="dark" class="visually-hidden">Dark</label>
+            <input type="radio" name="theme" id="dark">
+
+            <label for="brown" class="visually-hidden">Brown</label>
+            <input type="radio" name="theme" id="brown">
+
+            <label for="green" class="visually-hidden">Green</label>
+            <input type="radio" name="theme" id="green">
+
+            <label for="pink" class="visually-hidden">Pink</label>
+            <input type="radio" name="theme" id="pink">
+        </fieldset>
+    </form>
+
+    <div class="container">
+        <div class="header">
+            <h1>/doit</h1>
+
+            <div class="settings">
+                <ion-icon name="brush-outline"></ion-icon>
+                <h2>themes</h2>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="heading">
+                <div class="name-input">
+                    <h1>hello,</h1>
+                    <input type="text" placeholder="your name" id="name">
+                </div>
+                
+                <div class="icons">
+                    <ion-icon name="help-circle-outline" id="helpIcon"></ion-icon>
+                    <ion-icon name="notifications-outline" id="notiIcon"></ion-icon>
+                    <ion-icon name="person-circle-outline" id="profIcon"></ion-icon>
+                </div>
+            </div>
+            <div class="title">
+                <h1>todo</h1>
+            </div>
+
+            <div class="card-cont">
+                <div class="todo">
+                    <div class="label">
+                        <form id="new-task-form">
+                            <input 
+                                type="text" 
+                                name="new-task-input" 
+                                id="new-task-input" 
+                                placeholder="your task" />
+                                <input 
+                                type="submit"
+                                id="new-task-submit" 
+                                value="add task" />
+                        </form>
+                    </div>
+                    <div id="tasks">
+                        <!-- <div class="task">
+                            <div class="content">
+                                <input type="checkbox" class="check">
+                                <input 
+                                    type="text" 
+                                    class="text" 
+                                    value="A new task"
+                                    readonly>
+                            </div>
+                            <div class="actions">
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                                <div id='time' class="time"></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="important">
+                    <div class="label">
+                        <form id="new-task-form2">
+                            <input 
+                                type="text" 
+                                name="new-task-input" 
+                                id="new-task-input2" 
+                                placeholder="your task" />
+                                <input 
+                                type="submit"
+                                id="new-task-submit2" 
+                                value="add task" />
+                        </form>
+                    </div>
+                    <div id="tasks2">
+                        <!-- <div class="task">
+                            <div class="content">
+                                <input 
+                                    type="text" 
+                                    class="text" 
+                                    value="A new task"
+                                    readonly>
+                            </div>
+                            <div class="actions">
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Copyright © 2022  Doit</p>
+        </div>
+    </div>
+    
+        <div class="help">
+            <div class="help-content">
+                <ion-icon name="close-outline" class="helpClose"></ion-icon>
+                <ion-icon name="help-circle-outline" class="helpInfo"></ion-icon>
+                <h3>Help</h3>
+                <p>The purpose of this website is to organize your daily life. Type a <span>task</span> on the "your task" label and click <span>add task</span>. If you want to change the task or delete it, there's two buttons for that. :)</p>
+            </div>
+        </div>
+    
+
+    <div class="notification">
+        <ion-icon name="close-outline" class="notiClose"></ion-icon>
+        <p>You dont have any new notifications :(</p>
+    </div>
+
+    <div class="profile">
+        <ion-icon name="close-outline" class="profClose"></ion-icon>
+        <h3>Log In</h3>
+        <input type="email" placeholder="type your e-mail here">
+        <input type="password" placeholder=" type your password">
+        <button>Log In</button>
+    </div>
+</body>
+</html>
+
+
+
+
+               
